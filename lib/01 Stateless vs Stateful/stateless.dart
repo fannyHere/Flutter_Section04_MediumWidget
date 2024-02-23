@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:section_4/appbar_widget.dart';
 
 // ignore: must_be_immutable
 class Stateless extends StatelessWidget {
@@ -9,7 +8,11 @@ class Stateless extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appbar(),
+        appBar: AppBar(
+          backgroundColor: Colors.blue,
+          centerTitle: true,
+          title: Text("Stateless"),
+        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

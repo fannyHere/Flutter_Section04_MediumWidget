@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:section_4/appbar_widget.dart';
 
 class Stateful extends StatefulWidget {
   @override
@@ -13,7 +12,11 @@ class _StatefulState extends State<Stateful> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: appbar(),
+        appBar: AppBar(
+          backgroundColor: Colors.blueAccent,
+          centerTitle: true,
+          title: Text("Stateful"),
+        ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:section_4/02%20Dialogue/dialogue.dart';
+import 'package:section_4/03%20SnackBar/snackbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Dialogue(),
+      home: snackbar(),
     );
   }
 }

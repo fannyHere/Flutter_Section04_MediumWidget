@@ -11,6 +11,7 @@ bool isHidden = true;
 //controller itu buat nampung value dari masing-masing column
 TextEditingController emailC = TextEditingController();
 TextEditingController passC = TextEditingController();
+//jadi, TextEditingController itu kayak tukang catet yang ngebantu kamu pantau dan atur apa yang ditulis pengguna di TextField.
 
 class _TxtfieldState extends State<Txtfield> {
   @override
@@ -42,6 +43,8 @@ class _TxtfieldState extends State<Txtfield> {
             // ),
             TextField(
               controller: emailC,
+              //Yang menarik perhatian di sini adalah controller: emailController. Ini adalah cara kita memberitahu TextField untuk menggunakan emailController sebagai kontroler untuk kotak teksnya. Jadi, setiap kali pengguna mengetik sesuatu di dalam kotak teks ini, nilai teks tersebut akan disimpan dalam emailController.
+              //Misalnya, jika pengguna mengetik "user@example.com" di dalam kotak teks, kita bisa mendapatkan teks tersebut melalui emailController.text
               autocorrect: false,
               keyboardType: TextInputType.emailAddress,
               //ini nanti di keyboardnya otomatis ada @ sama _

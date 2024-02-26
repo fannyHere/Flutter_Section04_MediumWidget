@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:section_4/10%20Navigation/navigation.dart';
 
 class drawerrr extends StatelessWidget {
   const drawerrr({super.key});
@@ -10,6 +11,19 @@ class drawerrr extends StatelessWidget {
         title: Text("Drawer"),
         centerTitle: true,
         backgroundColor: Colors.limeAccent,
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.of(context).pop(
+              //BUAT PINDAH KE PAGE SEBELUMNYA >>> PREVIOUS
+              MaterialPageRoute(
+                builder: (context) => nav(),
+              ),
+            );
+          }, // Hapus titik koma di sini
+          child: Text("prev page"),
+        ),
       ),
       drawer: Drawer(
           child:
@@ -28,7 +42,7 @@ class drawerrr extends StatelessWidget {
         //   color: Colors.blueAccent,
         // )
         Expanded(
-            child: ListView(children: [
+            child: ListView(padding: EdgeInsets.only(top: 10), children: [
           ListTile(
             onTap: () {
               print("PINDAH KE PAGE HOME");

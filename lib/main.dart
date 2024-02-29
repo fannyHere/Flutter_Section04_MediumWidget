@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:section_4/10%20Navigation/navigation.dart';
+import 'package:section_4/11%20ui_instagram/kul_ver_ui.instagram.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: nav(),
+      home: Kul_version(),
     );
   }
 }

@@ -15,6 +15,8 @@ class icon_IG extends StatelessWidget {
             border: Border(
                 bottom: BorderSide(
           color: active == true ? Colors.black : Colors.white,
+          //conditional (ternary) operator yang digunakan dalam Flutter atau Dart.
+          //Ini adalah cara untuk menentukan nilai suatu ekspresi berdasarkan kondisi tertentu. Dalam kasus ini, jika nilai variabel active adalah true, maka warna yang dipilih adalah Colors.black, jika tidak, warna yang dipilih adalah Colors.white.
           width: 1,
         ))),
         child: Icon(Ikon),

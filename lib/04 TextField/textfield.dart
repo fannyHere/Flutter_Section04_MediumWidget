@@ -46,9 +46,27 @@ class _TxtfieldState extends State<Txtfield> {
               //Yang menarik perhatian di sini adalah controller: emailController. Ini adalah cara kita memberitahu TextField untuk menggunakan emailController sebagai kontroler untuk kotak teksnya. Jadi, setiap kali pengguna mengetik sesuatu di dalam kotak teks ini, nilai teks tersebut akan disimpan dalam emailController.
               //Misalnya, jika pengguna mengetik "user@example.com" di dalam kotak teks, kita bisa mendapatkan teks tersebut melalui emailController.text
               autocorrect: false,
-              keyboardType: TextInputType.emailAddress,
+              autofocus:
+                  true, //jadi pas diklik tuh baru muncul kotak dan mulai ngetik
+              enableSuggestions:
+                  true, //untukmemberikan rekomendasi kata-kata selanjutnya
+              enableInteractiveSelection:
+                  true, //memberikan suatu text yang dicopy dan akan dipaste ke kolom text nya
+              enabled:
+                  false, //ini tuh untukmenampilkan suatu kolom yg mau diketik
+              obscureText: false, //pas diketik nanti dotted kaya passowrd
+              // obscuringCharacter: '^', //pas ngetik tuh ada hurufnya dulu terus bukan dotted tapi tanda ^
+              obscuringCharacter:
+                  '', //pas ngetik tuh ada hurudnya dulu terus dotted
+              //keyboardType: TextInputType.emailAddress,
               //ini nanti di keyboardnya otomatis ada @ sama _
               //textInputAction: TextInputAction.done, //supaya pas masukin text, di ujung kanan bawah keyboard ada done
+              //keyboardType:
+//                  TextInputType.number, //paskeluar keyboard angka semua
+              keyboardType: TextInputType
+                  .phone, //paskeyboardnya keluar ada +62 di keyboard sama di layar
+              readOnly:
+                  true, //hanya bisa melihat tampilan layar, ngga ada muncul keyboard
               textInputAction: TextInputAction
                   .next, //supaya pas masukin text, lansgung ngisi kolom form berikutnya
               decoration: InputDecoration(
@@ -76,7 +94,7 @@ class _TxtfieldState extends State<Txtfield> {
                 autocorrect: false,
                 //obscureText: true, //klonulis password ada bintang-bintangnya
                 obscureText: isHidden,
-                textInputAction: TextInputAction.done,
+                textInputAction: TextInputAction.done, //diujung kanan HP done
                 decoration: InputDecoration(
                   labelText: "password :", //tipe 1 penulisan label text
                   contentPadding: EdgeInsets.symmetric(

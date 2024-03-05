@@ -49,3 +49,7 @@ class _navState extends State<nav> {
     );
   }
 }
+
+
+// Sekarang, bayangkan kamu sudah selesai main di taman dan mau keluar. Nah, waktu kamu keluar taman itu, itu kayak pop. Kamu keluar dari taman.
+// Jadi, push itu kayak masuk ke dalam suatu halaman atau layar baru di aplikasi Flutter, sementara pop itu kayak keluar dari halaman atau layar itu.

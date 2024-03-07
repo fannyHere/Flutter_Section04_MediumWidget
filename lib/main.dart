@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 // import 'package:section_4/16%20Routes/routes_gallery_page.dart';
 // import 'package:section_4/16%20Routes/routes_home_page.dart.dart';
 // import 'package:section_4/16%20Routes/routes_photo.dart';
-import 'package:section_4/17%20switch/switch.dart';
+import 'package:section_4/18%20Model/models.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: mySwitch(),
+      home: MyModels(),
 
       //MENDAFTARKAN SECARA MANUAL:
       // initialRoute: '/homepage', //halaman pertama yang dibuka

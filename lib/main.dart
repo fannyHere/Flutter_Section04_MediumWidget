@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:section_4/21%20Flexible%20and%20Expanded/flex.dart';
+import 'package:section_4/22%20FittedBox/fittBox.dart';
 //import 'package:flutter/services.dart';
 // import 'package:section_4/16%20Routes/routes_gallery_page.dart';
 // import 'package:section_4/16%20Routes/routes_home_page.dart.dart';
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyFlex(),
+      home: MyFitBox(),
 
       //MENDAFTARKAN SECARA MANUAL:
       // initialRoute: '/homepage', //halaman pertama yang dibuka

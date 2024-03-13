@@ -20,6 +20,7 @@ class MyDateFormat extends StatelessWidget {
           // DateFormat.yMMMMEEEEd().add_jm().format(
           //     DateTime.now()), //outputnya Tuesday, March 12, 2024 10:53 AM
           DateFormat.yMMMMEEEEd().add_Hms().format(DateTime.now()),
+          //sumber : https://pub.dev/documentation/intl/latest/intl/DateFormat-class.html
           style: TextStyle(fontSize: 25),
         ),
       ),
